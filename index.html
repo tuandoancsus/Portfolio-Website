@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuan Doan — Software Engineer</title>
+    <meta
+      name="description"
+      content="Tuan Doan is a Software Engineer based in the San Francisco Bay Area. CS grad from CSU Sacramento."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tuan Doan — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software Engineer in the Bay Area. CS grad, CSU Sacramento (Magna Cum Laude)."
+    />
+    <meta property="og:image" content="assets/og-image.svg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER / NAV ========== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="logo" aria-label="Tuan Doan — home">TD</a>
+
+        <nav class="nav" id="main-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle dark mode"
+            title="Toggle dark mode"
+          >
+            <svg
+              class="icon-sun"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg
+              class="icon-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="main-nav"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========== HERO ========== -->
+      <section id="hero" class="hero">
+        <div class="hero-decoration" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="hero-eyebrow reveal">Software Engineer · Bay Area</p>
+          <h1 class="reveal">Tuan Doan</h1>
+          <p class="hero-lead reveal">
+            I build backend services and work on AI systems. I care about
+            reliability, how things scale, and making sure the parts that other
+            engineers depend on actually hold up.
+          </p>
+          <div class="hero-ctas reveal">
+            <a href="#projects" class="btn btn-primary">See my work</a>
+            <a href="Tuan_Doan_Resume.pdf" class="btn btn-secondary" download
+              >Download résumé</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT ========== -->
+      <section id="about" class="about section">
+        <div class="container">
+          <h2 class="section-title reveal">About</h2>
+          <div class="about-grid">
+            <div class="about-photo reveal">
+              <img
+                src="assets/profile.jpg"
+                alt="Tuan Doan"
+                class="profile-img"
+              />
+            </div>
+            <div class="about-bio reveal">
+              <p>
+                I graduated from CSU Sacramento in December 2025 with a Computer
+                Science degree (Magna Cum Laude, 3.88 GPA). My coursework
+                spanned the full stack, and along the way I got into machine
+                learning and took a computer architecture course that gave me a
+                good mental model for what's actually happening when code runs.
+              </p>
+              <p>
+                Right now I'm looking for my first software engineering role in
+                the Bay Area. I'm most interested in AI engineering and backend
+                infrastructure work: building reliable services, designing
+                systems that scale, and working on the parts of a product that
+                other engineers depend on.
+              </p>
+            </div>
+            <div class="skills reveal">
+              <div class="skill-group">
+                <h3 class="skill-group-label">Languages</h3>
+                <ul class="skill-list">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h3 class="skill-group-label">Frontend</h3>
+                <ul class="skill-list">
+                  <li>React</li>
+                  <li>Vue.js</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h3 class="skill-group-label">Backend</h3>
+                <ul class="skill-list">
+                  <li>Flask</li>
+                  <li>FastAPI</li>
+                  <li>Spring Boot</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h3 class="skill-group-label">Infrastructure</h3>
+                <ul class="skill-list">
+                  <li>Docker</li>
+                  <li>AWS (EC2, S3)</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>Firebase</li>
+                  <li>GitHub Actions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PROJECTS ========== -->
+      <section id="projects" class="projects section section-alt">
+        <div class="container">
+          <h2 class="section-title reveal">Projects</h2>
+          <div class="project-grid">
+            <!-- Bunches -->
+            <article class="project-card reveal">
+              <div class="card-thumb-link">
+                <img
+                  src="assets/projects/bunches.svg"
+                  alt="Bunches app screenshot placeholder"
+                  class="card-thumb"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Bunches</h3>
+                <p class="card-desc">
+                  Mobile app that shows you who's physically nearby using GPS
+                  and Bluetooth. Users get a live proximity feed and can start
+                  group hangouts on the spot. I built the backend, the real-time
+                  presence system, and the cross-platform mobile client.
+                </p>
+                <ul class="card-tags" aria-label="Technologies used">
+                  <li>React Native</li>
+                  <li>Node.js</li>
+                  <li>TypeScript</li>
+                  <li>Prisma</li>
+                  <li>PostgreSQL</li>
+                </ul>
+                <span class="card-private">Private repo</span>
+              </div>
+            </article>
+
+            <!-- Skin Cancer Detection -->
+            <article class="project-card reveal">
+              <a
+                href="https://github.com/wsc0tt/SunArmorAi"
+                class="card-thumb-link"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <img
+                  src="assets/projects/skin-cancer.png"
+                  alt="Skin Cancer Detection App screenshot placeholder"
+                  class="card-thumb"
+                  loading="lazy"
+                />
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">Skin Cancer Detection App</h3>
+                <p class="card-desc">
+                  Built at Hornet Hacks in 48 hours. Upload a photo of a skin
+                  lesion and get a risk classification back in seconds. I led
+                  the team, used an existing model for the dataset due to the
+                  time constraint, and wired up the Flask API the frontend hit.
+                </p>
+                <ul class="card-tags" aria-label="Technologies used">
+                  <li>Python</li>
+                  <li>Flask</li>
+                </ul>
+                <a
+                  href="https://github.com/wsc0tt/SunArmorAi"
+                  class="card-link"
+                  aria-label="View Skin Cancer Detection App on GitHub (link placeholder)"
+                  >View repo ↗</a
+                >
+              </div>
+            </article>
+
+            <!-- E-Waste Gurus -->
+            <article class="project-card reveal">
+              <div class="card-thumb-link">
+                <img
+                  src="assets/projects/ewaste.png"
+                  alt="E-Waste Gurus Customer Portal screenshot placeholder"
+                  class="card-thumb"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">E-Waste Gurus Customer Portal</h3>
+                <p class="card-desc">
+                  Senior capstone, built for a real e-waste recycling company.
+                  Customers can schedule pickups, track orders, and manage their
+                  account. Team of seven, two semesters, with the actual client
+                  doing user testing throughout. I was in charge of the API
+                  calls to populate the tables along with writing functional
+                  tests with PHPUnit.
+                </p>
+                <ul class="card-tags" aria-label="Technologies used">
+                  <li>Vue.js</li>
+                  <li>TypeScript</li>
+                  <li>PHP</li>
+                  <li>PHPUnit</li>
+                  <li>MySQL</li>
+                </ul>
+                <span class="card-private">Private repo</span>
+              </div>
+            </article>
+
+            <!-- GoFundMe Clone -->
+            <article class="project-card reveal">
+              <div class="card-thumb-link">
+                <video
+                  class="card-thumb"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="auto"
+                  aria-label="GoFundMe Clone demo"
+                >
+                  <source src="assets/projects/gofundme.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">GoFundMe Clone</h3>
+                <p class="card-desc">
+                  Crowdfunding app where campaigns live in a Solidity smart
+                  contract on a test network. Firebase handles the metadata that
+                  doesn't need to be on-chain. The interesting problem was
+                  figuring out what actually belongs on the blockchain versus
+                  what's just overhead.
+                </p>
+                <ul class="card-tags" aria-label="Technologies used">
+                  <li>React</li>
+                  <li>Solidity</li>
+                  <li>Firebase</li>
+                </ul>
+                <span class="card-private">Private repo</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== RESUME ========== -->
+      <section id="resume" class="resume section">
+        <div class="container resume-content">
+          <h2 class="section-title reveal">Resume</h2>
+          <p class="resume-desc reveal">One page. All the relevant stuff.</p>
+          <a href="Tuan_Doan_Resume.pdf" class="btn btn-primary reveal" download
+            >Download résumé</a
+          >
+        </div>
+      </section>
+
+      <!-- ========== CONTACT ========== -->
+      <section id="contact" class="contact section section-alt">
+        <div class="container contact-content">
+          <h2 class="section-title reveal">Get in touch</h2>
+          <p class="contact-lead reveal">
+            Looking for full-time software engineering roles in the Bay Area. My
+            inbox is open.
+          </p>
+          <div class="contact-links reveal">
+            <a href="mailto:tonytdoan14@gmail.com" class="contact-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              Email me
+            </a>
+            <a
+              href="https://github.com/tuandoancsus"
+              class="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tonytuandoan/"
+              class="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">© 2025 Tuan Doan</p>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
