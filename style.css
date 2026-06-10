@@ -11,6 +11,7 @@
   --border:       #e2e8f0;
   --card-bg:      #ffffff;
   --shadow:       rgba(0, 0, 0, 0.08);
+  --dot-color:    rgba(0, 0, 0, 0.07);
 
   --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-body:    'Inter', system-ui, sans-serif;
@@ -28,6 +29,7 @@
   --bg-secondary: #1e293b;
   --text:         #f1f5f9;
   --text-muted:   #94a3b8;
+  --dot-color:    rgba(255, 255, 255, 0.05);
   --accent:       #10b981;
   --accent-hover: #34d399;
   --border:       #334155;
@@ -144,6 +146,8 @@ button {
 .btn-primary:hover {
   background-color: var(--accent-hover);
   color: #fff;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 20%, transparent),
+              0 4px 20px color-mix(in srgb, var(--accent) 40%, transparent);
 }
 
 .btn-secondary {
@@ -338,6 +342,17 @@ body.nav-open .nav .nav-link {
   padding-block: 4rem;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--dot-color) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 40%, transparent 100%);
+}
+
 .hero-decoration {
   position: absolute;
   width: min(700px, 120vw);
@@ -357,13 +372,20 @@ body.nav-open .nav .nav-link {
 }
 
 .hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   font-family: var(--font-display);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 0.75rem;
+  background-color: color-mix(in srgb, var(--accent) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
 }
 
 .hero-content h1 {
