@@ -227,6 +227,19 @@
               </div>
               <ul class="job-bullets">
                 <li>
+                  Integrated 60+ data tables from two e-commerce marketplace API
+                  families into a bronze/silver/gold S3 lakehouse in ~12 weeks,
+                  with Step Functions orchestrating Lambda and Glue jobs from
+                  Aurora-stored configs, SQS job queues, and DynamoDB checkpoints
+                  that blocked duplicate runs.
+                </li>
+                <li>
+                  Owned multi-marketplace support end to end, carrying marketplace
+                  identifiers through the pipeline as deduplication keys, and added
+                  rate-limit-aware lookback windows that fixed stale attribution
+                  data in 8 tables.
+                </li>
+                <li>
                   Built an AI-assisted endpoint onboarding pipeline: an
                   orchestrator agent directed scoped sub-agents to resolve,
                   validate, and build ingestion and mapping configs, cutting
@@ -237,17 +250,8 @@
                 <li>
                   Added an audit agent that validated generated configs against
                   existing ones, halted on unsupported cases, and updated the
-                  related Jira tickets with findings.
-                </li>
-                <li>
-                  Integrated 60+ data tables from two e-commerce marketplace API
-                  families into an AWS lakehouse in ~12 weeks.
-                </li>
-                <li>
-                  Owned multi-marketplace support end to end, carrying marketplace
-                  identifiers through the pipeline as deduplication keys, and added
-                  rate-limit-aware lookback windows that fixed stale attribution
-                  data in 8 tables.
+                  related Jira tickets with findings, so no invalid config
+                  reached production.
                 </li>
                 <li>
                   Set up the team's Agile process and served as the developers'
@@ -349,7 +353,7 @@
               <div class="card-thumb-link">
                 <img
                   src="assets/projects/bunches.svg"
-                  alt="Bunches app screenshot placeholder"
+                  alt="Bunches illustration: people nearby shown on proximity rings"
                   class="card-thumb"
                   loading="lazy"
                 />
@@ -435,6 +439,7 @@
                   <li>PHP</li>
                   <li>PHPUnit</li>
                   <li>MySQL</li>
+                  <li>Docker</li>
                 </ul>
                 <span class="card-private">Private repo</span>
               </div>
