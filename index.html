@@ -6,15 +6,14 @@
     <title>Tuan Doan — Software Engineer</title>
     <meta
       name="description"
-      content="Tuan Doan is a backend-leaning software engineer in the San Francisco Bay Area, 
-      building product backends and AI-powered features. CS grad, CSU Sacramento."
+      content="Tuan Doan is a software engineer in the San Francisco Bay Area building backend systems, AWS data pipelines, and multi-agent AI workflows. CS grad, CSU Sacramento."
     />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Tuan Doan — Software Engineer" />
     <meta
       property="og:description"
-      content="Backend-leaning software engineer in the Bay Area, building product backends and AI-powered features. CSU Sacramento CS '25, Magna Cum Laude."
+      content="Software engineer in the Bay Area building backend systems, AWS data pipelines, and multi-agent AI workflows. CSU Sacramento CS '25, Magna Cum Laude."
     />
     <meta property="og:image" content="assets/og-image.svg" />
     <meta property="og:type" content="website" />
@@ -41,6 +40,7 @@
         <nav class="nav" id="main-nav" aria-label="Primary navigation">
           <ul class="nav-list">
             <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#resume" class="nav-link">Resume</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -117,10 +117,10 @@
           <p class="hero-eyebrow reveal">Software Engineer · Bay Area</p>
           <h1 class="reveal">Tuan Doan</h1>
           <p class="hero-lead reveal">
-            I build the backend half of products: the API routes, the data
-            models, the login flow that can't break. Lately that includes wiring
-            LLMs into apps properly, rather than calling an endpoint and hoping.
-            I like knowing why something works, not just that it does.
+            I build backend systems and the AI that runs inside them: data
+            pipelines on AWS, multi-agent workflows that do real work, and the
+            APIs that tie it together. I like knowing why something works, not
+            just that it does.
           </p>
           <div class="hero-ctas reveal">
             <a href="#projects" class="btn btn-primary">See my work</a>
@@ -152,11 +152,13 @@
                 good mental model for what's actually happening when code runs.
               </p>
               <p>
-                Right now I'm looking for my first software engineering role in
-                the Bay Area. I'm most interested in backend product engineering
-                and AI-integrated features: designing APIs and data models,
-                wiring LLMs into products the right way, and owning the pieces
-                of an app that have to work every time someone taps a button.
+                Most recently I was a Software Developer at CE Showroom, Inc.,
+                on a four-person team reporting directly to the CEO. I built an
+                AI-assisted onboarding pipeline (an orchestrator agent, scoped
+                sub-agents, and an audit agent) and brought 60+ tables of
+                marketplace API data into an AWS lakehouse. Now I'm looking for
+                AI/agent engineering and backend roles in the Bay Area, on a team
+                I can learn from.
               </p>
             </div>
             <div class="skills reveal">
@@ -164,9 +166,18 @@
                 <h3 class="skill-group-label">Languages</h3>
                 <ul class="skill-list">
                   <li>Python</li>
+                  <li>SQL</li>
                   <li>Java</li>
                   <li>JavaScript</li>
                   <li>TypeScript</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h3 class="skill-group-label">AI &amp; Agents</h3>
+                <ul class="skill-list">
+                  <li>Multi-agent orchestration</li>
+                  <li>LLM integration</li>
+                  <li>Hugging Face</li>
                 </ul>
               </div>
               <div class="skill-group">
@@ -182,16 +193,18 @@
                   <li>Flask</li>
                   <li>FastAPI</li>
                   <li>Spring Boot</li>
+                  <li>Node.js</li>
                 </ul>
               </div>
               <div class="skill-group">
-                <h3 class="skill-group-label">Infrastructure</h3>
+                <h3 class="skill-group-label">Cloud &amp; Data</h3>
                 <ul class="skill-list">
-                  <li>Docker</li>
-                  <li>AWS (EC2, S3)</li>
+                  <li>AWS (Lambda, Glue, SQS, Step Functions, S3, DynamoDB, Aurora)</li>
+                  <li>Terraform</li>
+                  <li>Cloudflare Workers &amp; D1</li>
                   <li>PostgreSQL</li>
                   <li>MongoDB</li>
-                  <li>Firebase</li>
+                  <li>Docker</li>
                   <li>GitHub Actions</li>
                 </ul>
               </div>
@@ -200,11 +213,137 @@
         </div>
       </section>
 
+      <!-- ========== EXPERIENCE ========== -->
+      <section id="experience" class="experience section section-alt">
+        <div class="container">
+          <h2 class="section-title reveal">Experience</h2>
+          <div class="job-list">
+            <article class="job reveal">
+              <div class="job-head">
+                <h3 class="job-title">
+                  Software Developer <span class="job-org">· CE Showroom, Inc.</span>
+                </h3>
+                <p class="job-meta">Roseville, CA · Jul 2026 – Oct 2026</p>
+              </div>
+              <ul class="job-bullets">
+                <li>
+                  Built an AI-assisted endpoint onboarding pipeline: an
+                  orchestrator agent directed scoped sub-agents to resolve,
+                  validate, and build ingestion and mapping configs, cutting
+                  onboarding from ~15 min of manual work per endpoint to parallel
+                  batches of 8–10 endpoints in ~15 min. Other developers on the
+                  team adopted it.
+                </li>
+                <li>
+                  Added an audit agent that validated generated configs against
+                  existing ones, halted on unsupported cases, and updated the
+                  related Jira tickets with findings.
+                </li>
+                <li>
+                  Integrated 60+ data tables from two e-commerce marketplace API
+                  families into an AWS lakehouse in ~12 weeks.
+                </li>
+                <li>
+                  Owned multi-marketplace support end to end, carrying marketplace
+                  identifiers through the pipeline as deduplication keys, and added
+                  rate-limit-aware lookback windows that fixed stale attribution
+                  data in 8 tables.
+                </li>
+                <li>
+                  Set up the team's Agile process and served as the developers'
+                  primary liaison to the CEO.
+                </li>
+              </ul>
+              <ul class="card-tags" aria-label="Technologies used">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>AWS</li>
+                <li>Terraform</li>
+                <li>Multi-agent systems</li>
+              </ul>
+            </article>
+
+            <article class="job reveal">
+              <div class="job-head">
+                <h3 class="job-title">
+                  Code Instructor <span class="job-org">· Hackingtons</span>
+                </h3>
+                <p class="job-meta">Rocklin, CA · May 2025 – Sep 2025</p>
+              </div>
+              <ul class="job-bullets">
+                <li>
+                  Troubleshot and reviewed JavaScript and Python code in live
+                  sessions with ~30 students weekly.
+                </li>
+              </ul>
+            </article>
+
+            <article class="job reveal">
+              <div class="job-head">
+                <h3 class="job-title">
+                  Peer Assisted Learning Facilitator
+                  <span class="job-org">· CSU Sacramento</span>
+                </h3>
+                <p class="job-meta">Sacramento, CA · Aug 2023 – May 2024</p>
+              </div>
+              <ul class="job-bullets">
+                <li>
+                  Led weekly sessions teaching the foundations of object-oriented
+                  programming in Java.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <!-- ========== PROJECTS ========== -->
-      <section id="projects" class="projects section section-alt">
+      <section id="projects" class="projects section">
         <div class="container">
           <h2 class="section-title reveal">Projects</h2>
           <div class="project-grid">
+            <!-- PickDays -->
+            <article class="project-card reveal">
+              <a
+                href="https://pickdays.app"
+                class="card-thumb-link"
+                tabindex="-1"
+                aria-hidden="true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="assets/projects/pickdays.png"
+                  alt="PickDays screenshots: painting available days on a calendar, and the results view ranking the best overlap"
+                  class="card-thumb"
+                  loading="lazy"
+                />
+              </a>
+              <div class="card-body">
+                <h3 class="card-title">PickDays</h3>
+                <p class="card-desc">
+                  Group scheduling without the sign-up. Share a link, everyone
+                  paints the days they're free, and the results show the best
+                  overlap. I designed and built it end to end, including a
+                  nightly Worker that purges expired events and personal data.
+                  No accounts, no cookies, no trackers.
+                </p>
+                <ul class="card-tags" aria-label="Technologies used">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Vite</li>
+                  <li>Cloudflare Workers</li>
+                  <li>D1</li>
+                </ul>
+                <a
+                  href="https://pickdays.app"
+                  class="card-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit pickdays.app ↗</a
+                >
+              </div>
+            </article>
             <!-- Bunches -->
             <article class="project-card reveal">
               <div class="card-thumb-link">
@@ -300,45 +439,12 @@
                 <span class="card-private">Private repo</span>
               </div>
             </article>
-
-            <!-- GoFundMe Clone -->
-            <article class="project-card reveal">
-              <div class="card-thumb-link">
-                <video
-                  class="card-thumb"
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  preload="auto"
-                  aria-label="GoFundMe Clone demo"
-                >
-                  <source src="assets/projects/gofundme.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">GoFundMe Clone</h3>
-                <p class="card-desc">
-                  Crowdfunding app where campaigns live in a Solidity smart
-                  contract on a test network. Firebase handles the metadata that
-                  doesn't need to be on-chain. The interesting problem was
-                  figuring out what actually belongs on the blockchain versus
-                  what's just overhead.
-                </p>
-                <ul class="card-tags" aria-label="Technologies used">
-                  <li>React</li>
-                  <li>Solidity</li>
-                  <li>Firebase</li>
-                </ul>
-                <span class="card-private">Private repo</span>
-              </div>
-            </article>
           </div>
         </div>
       </section>
 
       <!-- ========== RESUME ========== -->
-      <section id="resume" class="resume section">
+      <section id="resume" class="resume section section-alt">
         <div class="container resume-content">
           <h2 class="section-title reveal">Resume</h2>
           <p class="resume-desc reveal">One page. All the relevant stuff.</p>
@@ -349,12 +455,12 @@
       </section>
 
       <!-- ========== CONTACT ========== -->
-      <section id="contact" class="contact section section-alt">
+      <section id="contact" class="contact section">
         <div class="container contact-content">
           <h2 class="section-title reveal">Get in touch</h2>
           <p class="contact-lead reveal">
-            Looking for full-time software engineering roles in the Bay Area. My
-            inbox is open.
+            Looking for AI/agent engineering and backend software roles in the
+            Bay Area. My inbox is open.
           </p>
           <div class="contact-links reveal">
             <a href="mailto:tonytdoan14@gmail.com" class="contact-link">
@@ -423,10 +529,11 @@
     <!-- ========== FOOTER ========== -->
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p class="footer-copy">© 2025 Tuan Doan</p>
+        <p class="footer-copy">© 2026 Tuan Doan</p>
         <nav aria-label="Footer navigation">
           <ul class="footer-nav">
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
