@@ -228,10 +228,8 @@
               <ul class="job-bullets">
                 <li>
                   Integrated 60+ data tables from two e-commerce marketplace API
-                  families into a bronze/silver/gold S3 lakehouse in ~12 weeks,
-                  with Step Functions orchestrating Lambda and Glue jobs from
-                  Aurora-stored configs, SQS job queues, and DynamoDB checkpoints
-                  that blocked duplicate runs.
+                  families into a medallion (bronze/silver/gold) lakehouse on AWS
+                  in ~12 weeks, with idempotent, queue-driven ingestion jobs.
                 </li>
                 <li>
                   Owned multi-marketplace support end to end, carrying marketplace
